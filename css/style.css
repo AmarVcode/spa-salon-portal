@@ -1,8 +1,11 @@
         /* 🌸 Color Palette */
         :root {
-            --primary-color: #B57EDC;  /* Lavender */
-            --secondary-color: #FADADD; /* Light Pink */
-            --accent-color: #B76E79;   /* Rose Gold */
+            --primary-color: #B57EDC;
+            /* Lavender */
+            --secondary-color: #FADADD;
+            /* Light Pink */
+            --accent-color: #B76E79;
+            /* Rose Gold */
             --text-color: #333;
             --bg-color: #fff;
             --shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -172,301 +175,486 @@
             }
         }
 
-/* 🎨 Styling for Summary Cards */
+        /* 🎨 Styling for Summary Cards */
 
 
-.summary-section .summary-card {
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    min-height: 125px;
-}
+        .summary-section .summary-card {
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            min-height: 125px;
+        }
 
-/* 📌 Monthly Sales (Soft Pink) */
-.summary-section .summary-card:nth-child(1) {
-    background: #F9E0E3; /* Soft Pink */
-    color: #6A1B4D; /* Deep Plum */
-}
-.summary-section .summary-card:nth-child(1) i {
-    color: #D63384; /* Rose */
-}
+        /* 📌 Monthly Sales (Soft Pink) */
+        .summary-section .summary-card:nth-child(1) {
+            background: #F9E0E3;
+            /* Soft Pink */
+            color: #6A1B4D;
+            /* Deep Plum */
+        }
 
-/* 📌 Total Products (Lavender Tint) */
-.summary-section .summary-card:nth-child(2) {
-    background: #E8DAEF; /* Lavender */
-    color: #4A235A; /* Deep Violet */
-}
-.summary-section .summary-card:nth-child(2) i {
-    color: #6C3483; /* Purple */
-}
+        .summary-section .summary-card:nth-child(1) i {
+            color: #D63384;
+            /* Rose */
+        }
 
-/* 📌 Total Experts (Mint Green) */
-.summary-section .summary-card:nth-child(3) {
-    background: #D1F2EB; /* Mint Green */
-    color: #117A65; /* Deep Teal */
-}
-.summary-section .summary-card:nth-child(3) i {
-    color: #1ABC9C; /* Teal */
-}
+        /* 📌 Total Products (Lavender Tint) */
+        .summary-section .summary-card:nth-child(2) {
+            background: #E8DAEF;
+            /* Lavender */
+            color: #4A235A;
+            /* Deep Violet */
+        }
 
-/* 📌 Total Appointments (Peach Beige) */
-.summary-section .summary-card:nth-child(4) {
-    background: #FDEBD0; /* Peach */
-    color: #935116; /* Burnt Orange */
-}
-.summary-section .summary-card:nth-child(4) i {
-    color: #E67E22; /* Orange */
-}
+        .summary-section .summary-card:nth-child(2) i {
+            color: #6C3483;
+            /* Purple */
+        }
 
-/* 📌 Total Customers (Light Blue) */
-.summary-section .summary-card:nth-child(5) {
-    background: #D6EAF8; /* Light Blue */
-    color: #1A5276; /* Dark Blue */
-}
-.summary-section .summary-card:nth-child(5) i {
-    color: #3498DB; /* Blue */
-}
+        /* 📌 Total Experts (Mint Green) */
+        .summary-section .summary-card:nth-child(3) {
+            background: #D1F2EB;
+            /* Mint Green */
+            color: #117A65;
+            /* Deep Teal */
+        }
 
-/* ✨ Hover Effect */
-.summary-section .summary-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-}
+        .summary-section .summary-card:nth-child(3) i {
+            color: #1ABC9C;
+            /* Teal */
+        }
 
-.chart-container {
-    min-height: 400px; /* Adjust as needed */
-    height: 100%; /* Ensures it adapts */
-    width: 100%;
-    position: relative;
-}
+        /* 📌 Total Appointments (Peach Beige) */
+        .summary-section .summary-card:nth-child(4) {
+            background: #FDEBD0;
+            /* Peach */
+            color: #935116;
+            /* Burnt Orange */
+        }
 
-.appointments-section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    margin-block: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+        .summary-section .summary-card:nth-child(4) i {
+            color: #E67E22;
+            /* Orange */
+        }
 
-.section-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #D63384; /* Your theme color */
-}
+        /* 📌 Total Customers (Light Blue) */
+        .summary-section .summary-card:nth-child(5) {
+            background: #D6EAF8;
+            /* Light Blue */
+            color: #1A5276;
+            /* Dark Blue */
+        }
 
-.custom-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+        .summary-section .summary-card:nth-child(5) i {
+            color: #3498DB;
+            /* Blue */
+        }
 
-.custom-table thead {
-    background: #D63384; /* Feminine theme */
-    color: white;
-}
+        /* ✨ Hover Effect */
+        .summary-section .summary-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+        }
 
-.custom-table th,
-.custom-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
+        .chart-container {
+            min-height: 400px;
+            /* Adjust as needed */
+            height: 100%;
+            /* Ensures it adapts */
+            width: 100%;
+            position: relative;
+        }
 
-.status {
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    display: inline-block;
-}
+        .appointments-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-block: 50px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.status i {
-    margin-right: 5px;
-}
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #D63384;
+            /* Your theme color */
+        }
 
-.status.pending {
-    background: #FFC107;
-    color: #6D4C41;
-}
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-.status.completed {
-    background: #28A745;
-    color: white;
-}
+        .custom-table thead {
+            background: #D63384;
+            /* Feminine theme */
+            color: white;
+        }
 
-.status.canceled {
-    background: #DC3545;
-    color: white;
-}
+        .custom-table th,
+        .custom-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
 
-.appointments-section-chart {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-block: 50px;
-    background: #fff;
-}
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: inline-block;
+        }
 
-/* Left Section: Chart */
-.chart-container {
-    width: 75%;
-    padding: 15px;
-    border-radius: 10px;
-    background: #FAFAFA;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-}
+        .status i {
+            margin-right: 5px;
+        }
 
-/* Right Section: Create Appointment Card */
-.create-appointment-card {
-    width: 25%;
-    background: #ffdee969;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
+        .status.pending {
+            background: #FFC107;
+            color: #6D4C41;
+        }
 
-.create-appointment-card h3 {
-    font-size: 18px;
-    color: #D63384;
-    margin-bottom: 10px;
-}
+        .status.completed {
+            background: #28A745;
+            color: white;
+        }
 
-.create-appointment-card p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
-}
+        .status.canceled {
+            background: #DC3545;
+            color: white;
+        }
 
-.create-btn {
-    background: #D63384;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+        .appointments-section-chart {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-block: 50px;
+            background: #fff;
+        }
 
-.create-btn:hover {
-    background: #B0266D;
-    transform: scale(1.05);
-}
+        /* Left Section: Chart */
+        .chart-container {
+            width: 75%;
+            padding: 15px;
+            border-radius: 10px;
+            background: #FAFAFA;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+        }
 
-.customer-insights {
-    padding: 20px;
-    border-radius: 12px;
-    background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+        /* Right Section: Create Appointment Card */
+        .create-appointment-card {
+            width: 25%;
+            background: #ffdee969;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
 
-.customer-insights h2, .customer-insights h3 {
-    color: #D63384;
-    margin-bottom: 15px;
-}
+        .create-appointment-card h3 {
+            font-size: 18px;
+            color: #D63384;
+            margin-bottom: 10px;
+        }
 
-.insights-cards {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
+        .create-appointment-card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
 
-.card {
-    flex: 1;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    background: #FAF3F5;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-}
+        .create-btn {
+            background: #D63384;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-.card:hover {
-    transform: scale(1.05);
-}
+        .create-btn:hover {
+            background: #B0266D;
+            transform: scale(1.05);
+        }
 
-.card i {
-    font-size: 24px;
-    color: #D63384;
-    margin-bottom: 10px;
-}
+        .customer-insights {
+            padding: 20px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.card h3 {
-    font-size: 16px;
-    color: #333;
-}
+        .customer-insights h2,
+        .customer-insights h3 {
+            color: #D63384;
+            margin-bottom: 15px;
+        }
 
-.card p {
-    font-size: 14px;
-    font-weight: bold;
-    color: #666;
-}
+        .insights-cards {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
 
-.services-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+        .card {
+            flex: 1;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            background: #FAF3F5;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
 
-.service-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-}
+        .insights-cards .card:hover {
+            transform: scale(1.05);
+        }
 
-.service-card:hover {
-    background: rgba(255, 222, 233, 0.3);
-}
+        .insights-cards .card i {
+            font-size: 24px;
+            color: #D63384;
+            margin-bottom: 10px;
+        }
 
-.service-card i {
-    font-size: 20px;
-    color: #D63384;
-    margin-right: 15px;
-}
+        .insights-cards .card h3 {
+            font-size: 16px;
+            color: #333;
+        }
 
-.service-card div {
-    flex-grow: 1;
-}
+        .insights-cards .card p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #666;
+        }
 
-.service-card h4 {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-}
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-.service-card p {
-    font-size: 14px;
-    color: #666;
-}
+        .service-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
 
-.badge {
-    padding: 6px 12px;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 5px;
-    background: #D63384;
-    color: #fff;
-}
+        .service-card:hover {
+            background: rgba(255, 222, 233, 0.3);
+        }
 
-.customer-insights h2{
-    font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #D63384;
-}
+        .service-card i {
+            font-size: 20px;
+            color: #D63384;
+            margin-right: 15px;
+        }
+
+        .service-card div {
+            flex-grow: 1;
+        }
+
+        .service-card h4 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .badge {
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 5px;
+            background: #D63384;
+            color: #fff;
+        }
+
+        .customer-insights h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #D63384;
+        }
+
+        /* General Styling */
+        .colored_bg {
+            background: linear-gradient(135deg, #ffdde1, #ee9ca700);
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .colored_bg .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            width: 100vw;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            font-size: 20px;
+            font-weight: bold;
+            color: #D63384;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            color: #D63384;
+        }
+
+        nav a {
+            float: right;
+            color: #D63384;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Login Card */
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 360px;
+        }
+
+        .login-container h2 {
+            color: #D63384;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .mb-3 {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #D63384;
+            outline: none;
+            box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background: #D63384;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #b1286d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 400px) {
+            .login-container {
+                width: 90%;
+            }
+        }
+
+        /* Styling the dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dropdown-toggle:hover {
+            color: var(--primary-color);
+        }
+
+        .dropdown-toggle:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .dropdown-menu {
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border: none;
+            overflow: hidden;
+            min-width: 200px;
+        }
+
+        .dropdown-item {
+            padding: 10px 15px;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8d7da36;
+            color: #D63384;
+        }
+
+        /* Font Awesome arrow animation */
+        .dropdown-toggle .fa-chevron-down {
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown.show .dropdown-toggle .fa-chevron-down {
+            transform: rotate(180deg);
+        }
