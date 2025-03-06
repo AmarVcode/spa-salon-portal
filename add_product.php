@@ -1,3 +1,7 @@
+<?php
+include 'auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +35,7 @@ include "header.php";
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card p-4">
-                <h3 class="text-center mb-4"><i class="fas fa-box-open"></i> Add New Product</h3>
+                <h3 class="text-center mb-4"><i class="fas fa-plus"></i> Add New Product</h3>
                 
                 <form id="productForm" novalidate>
                     <div class="row">
@@ -146,7 +150,7 @@ include "header.php";
                         <!-- Submit Button -->
                         <div class="col-md-12">
                             <button type="submit" class="btn btn-primary w-100">
-                                <i class="fas fa-save"></i> Save Product
+                                <i class="fas fa-plus"></i> Add Product
                             </button>
                         </div>
                     </div>

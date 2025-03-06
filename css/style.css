@@ -31,6 +31,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            text-decoration: none;
         }
 
         .dashboard-header .search-bar {
@@ -532,6 +533,7 @@
 
         nav .logo {
             color: #D63384;
+            text-decoration: none;
         }
 
         nav a {
@@ -657,4 +659,8 @@
 
         .dropdown.show .dropdown-toggle .fa-chevron-down {
             transform: rotate(180deg);
+        }
+
+        .dl_flex{
+            display: flex;
         }

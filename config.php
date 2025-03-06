@@ -1,10 +1,15 @@
 <?php
 // config.php
 
-$servername = "localhost"; // Host
-$username = "root";        // MySQL username (default for XAMPP is root)
-$password = "";            // MySQL password (default for XAMPP is empty)
-$dbname = "spa-salon";       // Database name
+$servername = "localhost"; 
+$username = "root";       
+$password = "";           
+$dbname = "spa-salon";      
+
+// $servername = "localhost"; 
+// $username = "shamorfc_spa-admin";       
+// $password = "@4m4A4r4";           
+// $dbname = "shamorfc_spa-salon";      
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
