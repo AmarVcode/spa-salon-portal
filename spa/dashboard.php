@@ -67,7 +67,7 @@ include "header.php";
 
     </section>
 
-    <div class="appointments-section-chart container">
+    <div class="appointments-section-chart container container-color">
     <div class="chart-container">
         <canvas id="salesAppointmentsChart"></canvas>
     </div>
@@ -83,8 +83,9 @@ include "header.php";
 
 
 
-    <div class="appointments-section container">
-    <h3 class="section-title">📅 Upcoming Appointments</h3>
+    <div class="table-wraper container">
+    <h3 class="section-title"><i class="fa-solid fa-calendar-days"></i>
+    Upcoming Appointments</h3>
     
     <div class="table-responsive">
         <table class="table custom-table">
@@ -147,7 +148,8 @@ include "header.php";
 
 
 <div class="customer-insights container">
-    <h2>👤 Customer Insights</h2>
+    <h2><i class="fa-solid fa-user"></i>
+    Customer Insights</h2>
 
     <div class="insights-cards">
         <div class="card">
@@ -167,7 +169,7 @@ include "header.php";
         </div>
     </div>
 
-    <h3>📌 Most Booked Services</h3>
+    <h3><i class="fa-solid fa-thumbtack"></i> Most Booked Services</h3>
     <div class="services-container">
         <div class="service-card">
             <i class="fa-solid fa-spa"></i>
@@ -223,68 +225,77 @@ include "header.php";
 
 
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const ctx = document.getElementById("salesAppointmentsChart").getContext("2d");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const ctx = document.getElementById("salesAppointmentsChart").getContext("2d");
 
-        const salesAppointmentsChart = new Chart(ctx, {
-            type: "line",
-            data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov",
-                    "Dec"
-                ],
-                datasets: [{
-                        label: "Total Sales",
-                        backgroundColor: "rgba(214, 51, 132, 0.2)", // Soft Pink (Light)
-                        borderColor: "#D63384", // Rose
-                        pointBackgroundColor: "#D63384",
-                        pointBorderColor: "#fff",
-                        borderWidth: 2,
-                        pointRadius: 5,
-                        fill: true,
-                        data: [5000, 7000, 8000, 6000, 9000, 11000, 12000, 10000, 9500, 10500,
-                            11500, 13000
-                        ],
-                    },
-                    {
-                        label: "Total Appointments",
-                        backgroundColor: "rgba(52, 152, 219, 0.2)", // Light Blue (Soft)
-                        borderColor: "#3498DB", // Blue
-                        pointBackgroundColor: "#3498DB",
-                        pointBorderColor: "#fff",
-                        borderWidth: 2,
-                        pointRadius: 5,
-                        fill: true,
-                        data: [120, 140, 160, 150, 180, 200, 210, 190, 185, 195, 205, 220],
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    x: {
-                        grid: {
-                            display: false
-                        }
-                    },
-                    y: {
-                        beginAtZero: true,
-                        grid: {
-                            color: "#f3f3f3"
-                        }
+    const salesAppointmentsChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [
+                {
+                    label: "Total Sales",
+                    backgroundColor: "rgba(212, 175, 55, 0.9)", // Bold Gold
+                    borderColor: "#D4AF37",
+                    borderWidth: 2,
+                    borderRadius: 10, // Rounded edges
+                    data: [5000, 7000, 8000, 6000, 9000, 11000, 12000, 10000, 9500, 10500, 11500, 13000]
+                },
+                {
+                    label: "Total Appointments",
+                    backgroundColor: "rgba(230, 194, 0, 0.4)", // Softer Gold (Lower Opacity)
+                    borderColor: "#E6C200",
+                    borderWidth: 2,
+                    borderRadius: 10, // Rounded edges
+                    data: [120, 140, 160, 150, 180, 200, 210, 190, 185, 195, 205, 220]
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    grid: { display: false },
+                    ticks: {
+                        color: "#F5E1A4",
+                        font: { size: 14 }
                     }
                 },
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: "top"
+                y: {
+                    beginAtZero: true,
+                    grid: { color: "rgba(245, 225, 164, 0.2)" },
+                    ticks: {
+                        color: "#F5E1A4",
+                        font: { size: 14 }
                     }
                 }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        color: "#E6C200",
+                        font: { size: 16, weight: "bold" }
+                    }
+                },
+                tooltip: {
+                    backgroundColor: "rgba(212, 175, 55, 0.9)", // Gold tooltip
+                    titleColor: "#121212",
+                    bodyColor: "#000",
+                    borderColor: "#F5E1A4",
+                    borderWidth: 2,
+                    cornerRadius: 8,
+                    padding: 10,
+                    titleFont: { weight: "bold", size: 14 },
+                    bodyFont: { size: 13 }
+                }
             }
-        });
+        }
     });
-    </script>
+});
+
+</script>
     <?php
 include "includejs.php";
 ?>

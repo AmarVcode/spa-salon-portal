@@ -1,0 +1,83 @@
+:root {
+    --primary-gold: #D4AF37;
+    --dark-gold: #B8860B;
+    --soft-gold: #E6C200;
+    --black: #000000;
+    --matte-black: #1C1C1C;
+    --charcoal: #333333;
+    --off-black: #121212;
+    --golden-beige: #F5E1A4;
+}
+
+body {
+    background-color: var(--off-black);
+    color: var(--primary-gold);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    background: linear-gradient(135deg, var(--matte-black), var(--charcoal));
+    border: 2px solid var(--primary-gold);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(212, 175, 55, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--soft-gold);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--golden-beige);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card button {
+    background: var(--primary-gold);
+    color: var(--black);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.card button:hover {
+    background: var(--soft-gold);
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

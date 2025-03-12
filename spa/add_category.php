@@ -25,7 +25,7 @@ include "header.php";
         }
         .card {
             border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            
         }
         .form-label {
             font-weight: 600;
@@ -34,10 +34,10 @@ include "header.php";
  <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <div class="card p-4">
-                    <h3 class="text-center mb-4"><i class="fas fa-folder-plus"></i> Add Category</h3>
+                <div class="card p-4 card_form_container">
+                    <h3 class=" mb-4"><i class="fas fa-folder-plus"></i> Add Category</h3>
                     
-                    <form id="categoryForm" novalidate>
+                    <form id="categoryForm" action="add_category_action.php" method="post">
                         <div class="row">
                             <!-- Category Name (Required) -->
                             <div class="col-md-12 mb-3">
@@ -55,7 +55,7 @@ include "header.php";
                             <!-- Submit Button -->
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-primary w-100">
-                                    <i class="fas fa-save"></i> Add Category
+                                <i class="fas fa-folder-plus"></i> Add Category
                                 </button>
                             </div>
                         </div>
@@ -65,21 +65,5 @@ include "header.php";
         </div>
     </div>
 
-<script>
-    // Bootstrap validation
-    (function () {
-        'use strict'
-        var forms = document.querySelectorAll('.needs-validation')
-        Array.prototype.slice.call(forms).forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-            }, false)
-        })
-    })();
-</script>
 </body>
 </html>
